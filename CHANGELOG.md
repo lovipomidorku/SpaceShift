@@ -2,13 +2,19 @@
 
 All notable changes to SpaceShift are documented here.
 
-## [Unreleased]
+## [2.6] - 2026-11-25
 
 ### Added
 
 - **Start Hidden in Menu Bar** option that keeps the settings window closed at
   launch. Opening SpaceShift again from Finder or Spotlight while it runs in
   the menu bar brings the window back.
+
+### Fixed
+
+- The speed slider takes effect again on macOS 27: synthetic swipes start
+  almost at rest instead of at a full Space, so Dock animates the transition
+  at the selected speed instead of jumping. Contributed by @abaicus.
 
 ## [2.5] - 2026-09-15
 
