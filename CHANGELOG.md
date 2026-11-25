@@ -52,5 +52,6 @@ All notable changes to SpaceShift are documented here.
 - No networking, analytics, updater, or event logging.
 - Optimized and stripped release binary with hardened runtime enabled.
 
+[2.6]: https://github.com/lovipomidorku/SpaceShift/releases/tag/v2.6
 [2.5]: https://github.com/ReutS1/SpaceShift/releases/tag/v2.5
 [2.4]: https://github.com/ReutS1/SpaceShift/releases/tag/v2.4

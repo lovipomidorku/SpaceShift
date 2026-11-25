@@ -119,14 +119,21 @@ private struct MenuBarView: View {
         }
 
         Button("About SpaceShift") {
-            let sourceText = "github.com/ReutS1/SpaceShift"
+            let sourceText = "github.com/lovipomidorku/SpaceShift"
+            let originalText = "github.com/ReutS1/SpaceShift"
             let credits = NSMutableAttributedString(
-                string: "Licensed under GNU GPL v3.0.\nSource code: \(sourceText)"
+                string: "Licensed under GNU GPL v3.0.\nSource code: \(sourceText)\n"
+                    + "Fork of the original project by ReutS1: \(originalText)"
+            )
+            credits.addAttribute(
+                .link,
+                value: URL(string: "https://github.com/lovipomidorku/SpaceShift")!,
+                range: (credits.string as NSString).range(of: sourceText)
             )
             credits.addAttribute(
                 .link,
                 value: URL(string: "https://github.com/ReutS1/SpaceShift")!,
-                range: (credits.string as NSString).range(of: sourceText)
+                range: (credits.string as NSString).range(of: originalText)
             )
             NSApp.orderFrontStandardAboutPanel(options: [.credits: credits])
             NSApp.activate(ignoringOtherApps: true)

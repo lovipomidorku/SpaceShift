@@ -9,16 +9,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ReutS1/SpaceShift/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ReutS1/SpaceShift?style=flat-square"></a>
+  A maintained fork of <a href="https://github.com/ReutS1/SpaceShift">ReutS1/SpaceShift</a>, the original project by ReutS1.<br>
+  This fork is independent and is not affiliated with or endorsed by the original project.
+</p>
+
+<p align="center">
+  <a href="https://github.com/lovipomidorku/SpaceShift/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/lovipomidorku/SpaceShift?style=flat-square"></a>
   <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-000000?style=flat-square&logo=apple">
-  <a href="https://github.com/ReutS1/SpaceShift/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/ReutS1/SpaceShift/build.yml?branch=main&style=flat-square&label=build"></a>
+  <a href="https://github.com/lovipomidorku/SpaceShift/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/lovipomidorku/SpaceShift/build.yml?branch=main&style=flat-square&label=build"></a>
   <a href="LICENSE"><img alt="License: GPL v3" src="https://img.shields.io/badge/license-GPLv3-blue?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ReutS1/SpaceShift/releases/download/v2.5/SpaceShift-2.5.dmg"><strong>Download SpaceShift 2.5</strong></a>
+  <a href="https://github.com/lovipomidorku/SpaceShift/releases/download/v2.6/SpaceShift-2.6.dmg"><strong>Download SpaceShift 2.6</strong></a>
   ·
-  <a href="https://github.com/ReutS1/SpaceShift/releases">All releases</a>
+  <a href="https://github.com/lovipomidorku/SpaceShift/releases">All releases</a>
 </p>
 
 ![SpaceShift settings window](docs/images/spaceshift-settings.jpg)
@@ -46,7 +51,7 @@ SpaceShift is a lightweight native menu bar utility for macOS. It accelerates ho
 
 ## Installation
 
-1. Download [`SpaceShift-2.5.dmg`](https://github.com/ReutS1/SpaceShift/releases/download/v2.5/SpaceShift-2.5.dmg).
+1. Download [`SpaceShift-2.6.dmg`](https://github.com/lovipomidorku/SpaceShift/releases/download/v2.6/SpaceShift-2.6.dmg).
 2. Open the disk image and drag **SpaceShift** to **Applications**.
 3. Launch SpaceShift.
 4. Click **Allow…**, then enable SpaceShift under **System Settings → Privacy & Security → Accessibility**.
@@ -75,7 +80,7 @@ See [SECURITY.md](SECURITY.md) for the release security model and distribution n
 Requirements: macOS 14+, Swift 6-compatible toolchain, and Apple Command Line Tools.
 
 ```sh
-git clone https://github.com/ReutS1/SpaceShift.git
+git clone https://github.com/lovipomidorku/SpaceShift.git
 cd SpaceShift
 ./scripts/build-app.sh release
 open dist/SpaceShift.app
@@ -95,10 +100,12 @@ Bug reports and focused improvements are welcome. Please read [CONTRIBUTING.md](
 
 ## Credits
 
+SpaceShift was created by [ReutS1](https://github.com/ReutS1); this fork continues it from version 2.5. The macOS 27 speed fix in 2.6 was contributed by [abaicus](https://github.com/abaicus).
+
 The synthetic Dock-swipe technique and empirical velocity values are adapted from jurplel's MIT-licensed [InstantSpaceSwitcher](https://github.com/jurplel/InstantSpaceSwitcher). macOS 27 IOHID payload handling is based on the 0BSD-licensed [iss](https://github.com/joshuarli/iss). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and bundled third-party licenses.
 
 ## License
 
 SpaceShift source code and original project artwork are licensed under the [GNU General Public License v3.0](LICENSE). If you distribute a modified version, you must provide its corresponding source code under the same license.
 
-Copyright © 2026 ReutS1. Trademark rights in the SpaceShift name and logo are reserved; the license does not permit implying endorsement by the original project. Third-party components remain available under their respective licenses.
+Copyright © 2026 ReutS1. Modifications in this fork © 2026 lovipomidorku, licensed under the same terms; see [CHANGELOG.md](CHANGELOG.md) for what changed. Trademark rights in the SpaceShift name and logo are reserved; the license does not permit implying endorsement by the original project. Third-party components remain available under their respective licenses.
